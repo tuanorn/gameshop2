@@ -1,0 +1,28 @@
+#ad {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 25%;
+    min-height: 500px;
+}
+#ad .ad-content {
+    width: 70%;
+    height: min-content;
+    margin: 20% 0;
+    position: sticky;
+    top: calc(50px + 5%);
+
+    background-color: white;
+    border: solid 5px var(--secondaryColor);
+    z-index: 1;
+}
+#ad .ad-content img {
+    padding-bottom: 5%;
+    width: 100%;
+}
+#ad .ad-background {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    align-self: center;
+}

@@ -1,0 +1,32 @@
+:root {
+    --primaryColor: rgb(250, 250, 250);
+    --secondaryColor: #fc5203;
+    --tertiaryColor: black;
+    --quaternaryColor: gainsboro;
+}
+
+.members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    margin-top: 50px;
+    width: 70%;
+    height: min-content;
+}
+.members > * {
+    display: flex;
+    align-items: center;
+
+    width: 40%;
+    box-shadow: 0 0 10px 0;
+    margin-bottom: 50px;
+}
+.members > * img{
+    border: solid 5px var(--secondaryColor);
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 20%;
+}

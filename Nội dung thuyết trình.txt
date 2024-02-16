@@ -1,0 +1,90 @@
+THUYẾT TRÌNH VỀ WEBSITE
+
+-----HTML
+Terminology:
+- Element (phần tử)
+- Tag (thẻ)
+- Attribute (thuộc tính)
+- Delimiter (dấu tách)
+
+Thông tin về các thuộc tính:
+- href="mailto:"
+-- ? là dấu tách đầu tiên
+-- & là dấu tách cho các lệnh sau
+
+-----CSS
+Terminology:
+- Selector (bộ chọn)
+- Property (thuộc tính)
+- Value (giá trị)
+- Function (chức năng)
+- Specificity (độ ưu tiên để áp dụng style vào phần tử)
+- Rule (gồm bộ chọn và declaration box {})
+- Layout mode (kiểu dàn trang web)
+- Pseudo-element
+
+Thông tin về các thuộc tính:
+- "margin"
+-- 4 giá trị: top right bottom left
+-- 3 giá trị: top right-left bottom
+-- 2 giá trị: top-bottom right-left
+-- 1 giá trị: all sides
+- "display: flex"
+-- justify-content
+-- align-items
+-- flex-wrap
+-- flex-direction
+-- flex-flow
+
+
+-----JAVASCRIPT:
+Terminology:
+- Variables (biến)
+- Literals (hàm)
+
+Const, var, và let:
+- Đều dùng để declare
+- const:
+-- Block scope
+-- Không thể được redeclare/reassign
+- let:
+-- Block scope
+- var:
+-- Global scope
+
+GHI CHÚ:
+- Sử dụng template thuyết trình hợp lý
+- Giải thích các thẻ HTML, thuộc tính CSS, và các câu lệnh Javascript
+- Giải thích const, var, let
+- Thêm hình ảnh + lời giới thiệu về game
+- Thêm brand, thông tin cá nhân vào footer
+
+SCRIPT
+Các thành phần trong trang chủ + cách xử lý giao diện:
+- Branding:
+-- position: fixed
+- Menu
+-- display: flex
+-- position: sticky
+- Web carousel
+-- display: flex
+-- justify-content: center
+- Game grid:
+-- display: flex
+-- flex-wrap: wrap
+-- justify-content: center
+- Ads
+- Footer
+Transcript:
+- Slide 1 + 2 + 3:
+Welcome to my presentation. I wish a wonderful afternoon to all the guests who have dedicated their time to be present today. Now, I would like to start my presentation on the end-of-course project. Essentially, my initial and contemporary idea is to produce a website that hosts games, provided that it is a sustainable market with readily new potential customers. In addition, I plan on using advertisements along with sales of in-game items (e.g., in-game currency) to generate revenue. The idea generation was dedicated to week 1 of preparation, while designing the layout (with HTML and CSS), adding functionality with javascript, and finalizing and debugging occurred on the 2nd, 3rd, and 4th week, respectively.
+- Slide 4:
+As for the upsides of the website, the webpages' interfaces are adequately user-friendly, owing to the fact that they imitate other websites, to a degree where customers can effectively use it, yet maintain some level of differentiation. Furthermore, the buttons are responsive - such as expanding on hover - making the website more appealing. However, certain functions, such as saving data, and importing games, are incomplete as I lack specialist knowledge.
+- Slide 5:
+And here are the overall structure and links within the website: they are all connected to script.js and style.css - the general definitive scripts, basically for the header and footer of the body - with each branching to additional JS or CSS scripts for complementation (for the content).
+- Slide 6:
+Now, I would like to carry out a demonstration of the website's properties and functionalities: it essentially includes the branding, the menu, a web carousel (needing optimization), a game grid, an advertisement section, and a footer with contact details. As we hover over the home button, a menu appears that allows us to redirect to the website's info ('Link 2' is reserved).
+As for the login/sign-up function, you can navigate to the right section of the menu to enable a box depicting inputs for username and password, and a confirm button. As you can see, after signing up, the text of the account section is changed to the registered username, though this lasts only until the page is reloaded as there's no dedicated database.
+Before I show you my code, I would like to briefly elaborate on how I rendered the layout. In regards to the menu, I used display:flex to range them horizontally, and a pseudo-element with :hover so that [this box] emerges as you hover the "Home" button. Regarding the game grid, clicking any one of the items leads you to the game page with [this section] changed to its name. Here, I used display: flex, flex-wrap, along with justify-content: center to produce this arrangement.
+- Slide 7:
+And that's all about it. Thank you everybody for listening.

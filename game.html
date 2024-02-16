@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TGames</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="styleGame.css">
+</head>
+<body onload="loadContent();"> 
+    <div class="header">
+        <p class="brand" style="text-align: center; margin: 0;">TGAMES</p>
+    </div>
+    <div class="dupli-header"></div>
+    <div class="sticky-bar">
+        <div class="left-aligned">
+            <img src="/Images/User icon.svg" style="height: 100%;">
+            <p id="username-display">Guest</p>
+        </div>
+        <p>|</p>
+        <div class="select">
+            <p class="game-title">Game</p>
+            <div class="dropdown">
+                <a href="index.html">Home</a>
+                <hr/>
+                <a href="info.html">About us</a>
+            </div>
+        </div>
+        <p>|</p>
+        <div class="right-aligned">
+            <label for="searchbox" >Search</label>
+            <input type="text" id="searchbox" placeholder="find exciting games..." onkeydown="filterGames(event, this)">
+            <img id="rmv-filter" src="/Images/Close button.svg" style="height: 70%; background-color: white; border-radius: 5px; display: none;" onclick="redirect('index')">
+            <input type="button" class="menu-item" onclick="tweenSidebar('login', 'open');" value="Login" style="background-color: rgb(65, 65, 65);">
+            <input type="button" class="menu-item" onclick="tweenSidebar('signup', 'open');" value="Sign up" style="background-color: rgb(65, 65, 65);">
+        </div>
+    </div>
+    <div class="content">
+        <div class="top-section">
+            <div class="game-frame">
+                <iframe src="" frameborder="0"></iframe>
+                <img src="/Images/Play button.svg"/>
+                <div class="ctrl-ribbon"></div>
+            </div>
+            <div class="suggestions">
+
+            </div>
+        </div>
+        <div id="ad">
+            <img src="/Images/Stripes Background.svg" class="ad-background"/>
+            <div class="ad-content">
+                <img src="https://swiploo.com/wp-content/uploads/2023/05/image-2.png"/>
+                <img src="https://i.insider.com/52af68266bb3f7046743dd66?width=1000&format=jpeg&auto=webp"/>
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/2648fb88325379.5dd58ffe5151d.png"/>
+                <!--<img src="https://c8.alamy.com/comp/EXPY15/1920s-usa-coca-cola-magazine-advert-EXPY15.jpg"/>
+                <img src="https://marketing-interactive-assets.b-cdn.net/images/sg/content-images/cadbury_malaysia_criticised_for_lack_of_racial_diversity.png?auto_optimize=medium"/>
+                <img src="https://marketing-interactive-assets.b-cdn.net/images/sg/content-images/mm20210619-3_1.jpg?auto_optimize=medium"/>
+                <img src="https://i.pinimg.com/originals/ca/62/d2/ca62d2664d178c0760a2d3895e33484e.jpg"/>-->
+            </div>
+        </div>
+    </div>
+    <div id="login-box" class="sidebar">
+        <p id="login-label">Login</p>
+        <p>Username</p>
+        <input type="text" id="user" placeholder="Username" onsubmit="request()">
+        <p>Password</p>
+        <input type="password" id="password" placeholder="Password" onsubmit="request()">
+        <input type="submit" id="submit" onclick="request()" value="Confirm">
+        <p id="hint"></p>
+        <img src="/Images/Close button.svg" onclick="tweenSidebar()">
+    </div>
+    <div class="footer">
+        <div>
+            <h3>Read our</h3>
+            <p><a href="terms.html">Terms & Conditions</a><br/><a href="privacy.html">Privacy Policy</a></p>
+        </div>
+        <div>
+            <h3 style="display: inline-block;">Contact info</h3>
+            <p>Email: <a href="mailto: rwojpdv@gmail.com?
+                subject=Feedback for TGames">rwojpdv@gmail.com</a><br/>Tel: 0999 999 999</p>
+        </div>
+        <p class="brand" style="text-align: center; margin: 0; color: var(--secondaryColor)">TGAMES</p>
+    </div>
+    <script src="script.js"></script>
+    <script src="LoadGame.js"></script>
+</body>
+</html>

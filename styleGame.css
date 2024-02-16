@@ -1,0 +1,76 @@
+body {
+    display:flexbox;
+}
+/*Upper section*/
+body .content {
+    display: block;
+    padding: 30px 0;
+}
+.content .top-section {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+}
+/*game-frame*/
+.content .top-section .game-frame {
+    display: grid;
+    
+    position: relative;
+
+    margin-right: 1%;
+    width: 60%;
+    box-shadow: 0 0 10px 0;
+    
+}
+.content .top-section .game-frame img {
+    justify-self: center;
+    align-self: center;
+    top: calc(50% - 25px);
+    position: absolute;
+
+    width: 50px;
+
+}
+.content .top-section .game-frame iframe {
+    width: 100%;
+    aspect-ratio: 16/9;   
+}
+.content .top-section .game-frame .ctrl-ribbon {
+    width: 100%;
+    height: 50px;
+    
+    background-color: var(--quaternaryColor);
+}
+
+/*Ad section*/
+#ad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    width: 100%;
+    height: 150px;
+    margin-top: 30px;
+}
+#ad .ad-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    width: 50%;
+    height: 70%;
+   
+    background-color: white;
+    border: solid 5px var(--secondaryColor);
+    z-index: 1;
+}
+#ad .ad-content img {
+    height: 100%;
+}
+#ad .ad-background {
+    width: 70%;
+    height: 100%;
+    position: absolute;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TGames</title>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <link type="text/css" rel="stylesheet" href="styleHome.css"/>
+    <link type="text/css" rel="stylesheet" href="styleDefAd.css"/>
+</head>
+<body onload="loadGameList();"> 
+    <div class="header">
+        <p class="brand" style="text-align: center; margin: 0;">TGAMES</p>
+    </div>
+    <div class="dupli-header"></div>
+    <div class="sticky-bar">
+        <div class="left-aligned">
+            <img src="/Images/User icon.svg" style="height: 100%;">
+            <p id="username-display">Guest</p>
+        </div>
+        <p>|</p>
+        <div class="select">
+            <p id="pg-title">Home</p>
+            <div class="dropdown">
+                <a href="info.html">About us</a>
+                <hr/>
+                <a>Link 2</a>
+            </div>
+        </div>
+        <p>|</p>
+        <div class="right-aligned">
+            <label for="searchbox" >Search</label>
+            <input type="text" id="searchbox" placeholder="find exciting games..." onkeydown="filterGames(event, this)">
+            <img id="rmv-filter" src="/Images/Close button.svg" style="height: 70%; background-color: white; border-radius: 5px; display: none;" onclick="redirect('index')">
+            <input type="button" class="menu-item" onclick="tweenSidebar('login', 'open');" value="Login" style="background-color: rgb(65, 65, 65);">
+            <input type="button" class="menu-item" onclick="tweenSidebar('signup', 'open');" value="Sign up" style="background-color: rgb(65, 65, 65);">
+        </div>
+    </div>
+    <div class="content">
+        <div class="game-container">
+            <div class="trending">
+                <button onclick="animateGameDiv()"><img src="Images/Angle bracket.svg" style="transform: rotate(180deg);"></button>
+                <div class="game">
+
+                </div>
+                <button onclick="animateGameDiv('next')"><img src="Images/Angle bracket.svg"></button>
+            </div>
+            <div class="games">
+
+            </div>
+        </div>
+        <div id="ad">
+            <img src="/Images/Stripes Background.svg" class="ad-background"/>
+            <div class="ad-content">
+                <img src="https://swiploo.com/wp-content/uploads/2023/05/image-2.png"/>
+                <img src="https://i.insider.com/52af68266bb3f7046743dd66?width=1000&format=jpeg&auto=webp"/>
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/2648fb88325379.5dd58ffe5151d.png"/>
+            </div>
+        </div>
+    </div>
+    <div id="login-box" class="sidebar">
+        <p id="login-label">Login</p>
+        <p>Username</p>
+        <input type="text" id="user" placeholder="Username" onsubmit="request()">
+        <p>Password</p>
+        <input type="password" id="password" placeholder="Password" onsubmit="request()">
+        <input type="submit" id="submit" onclick="request()" value="Confirm">
+        <p id="hint"></p>
+        <img src="/Images/Close button.svg" onclick="tweenSidebar()">
+    </div>
+    <div class="footer">
+        <div>
+            <h3>Read our</h3>
+            <p><a href="terms.html">Terms & Conditions</a><br/><a href="privacy.html">Privacy Policy</a></p>
+        </div>
+        <div>
+            <h3 style="display: inline-block;">Contact info</h3>
+            <p>Email: <a href="mailto: rwojpdv@gmail.com?
+                subject=Feedback to TGames">rwojpdv@gmail.com</a><br/>Tel: 0999 999 999</p>
+        </div>
+        <p class="brand" style="text-align: center; margin: 0; color: var(--secondaryColor)">TGAMES</p>
+    </div>
+    <script src="LoadHome.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
